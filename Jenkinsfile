@@ -1,3 +1,4 @@
+pipeline {
 // definimos que nodo va a ejecutarlo
   agent any
 
