@@ -11,7 +11,7 @@ pipeline {
       steps {
         git ( 
             url:'https://github.com/alfredobs97/testJenkins',
-            credentialsId: '4a47ed5b-8571-4c55-b4bc-e8aad7010568	'
+            credentialsId: '4a47ed5b-8571-4c55-b4bc-e8aad7010568'
             )
         
       }
