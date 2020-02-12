@@ -32,7 +32,7 @@ jobs:
           - name: Login to DockerHub Registry
             run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
           - name: Build the tagged Docker image
-            run: docker build . --file Dockerfile -t alfredobs/cicd:${{steps.vars.outputs.tag}}
+            run: docker build . --file Dockerfile -t alfredobs97/cicd:${{ github.sha }}
           - name: Push the tagged Docker image
             run: docker push alfredobs97/cicd:${{steps.vars.outputs.tag}}
           
